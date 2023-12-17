@@ -1,0 +1,12 @@
+abstract factory:
+	It's an creational design pattern. It provides an interface for creating families of related or dependent objects without specifing their concreate classes.
+	It is designed to address the challenge of creating families of related objects without specifing their exact classes.
+	This pattern provides an abstract interface for creating various product objects while allowing concrete factories to implement specific families of products.
+	The abstract factory pattern consists of several key components
+	
+drawbacks:
+	1) complex hierachy: as system grows, the hierarchy of creators and products can become complex
+	2) High Maintenance: Adding new product families may require changes to multiple concrete factories, potentially leading to high maintenance.
+	3) Inflexiblity: The pattern can be less flexible if you need to add new products or families frequently.
+	4) Design Complexity: The pattern may lead to complex designs if not applied carefully.
+	

@@ -1,0 +1,10 @@
+Singleton Pattern:
+	It'a a creational design pattern. It is used when we want to a single instance of a class to control actions across a system.
+	Eg:- configuration manager, a thread pool or a database connection.
+	
+	drawback:-
+	It's not thread safe. We can add synchronization but it will affect performance. 
+	Lazy Singleton:- creates instance on demand.
+	Eager Singleton:- creates instance during class loading time.
+
+	

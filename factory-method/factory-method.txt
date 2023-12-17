@@ -1,0 +1,33 @@
+factory method:
+	It's a creational design pattern. It provides an interface for creating objects while allowing sub classes to determine the type of objects that will be created.
+	It allows to create object without specifying their exact class. This pattern defines an interface or an abstract class for creating objects but the actual instantiation
+	is left to it's sub classes.
+	This pattern consists of several key components.
+	
+	Creator interface declares factoryMethod();
+	CreatorA and CreatorB classes implements Creator interface so it defines the factoryMethod() in their respective classes.
+	In CreatorA class,
+		public Product factoryMethod(){
+			return new ProductA(); 
+		}
+	In CreatorB class,
+		public Product factoryMethod(){
+			return new ProductB(); 
+		}
+		
+	In both the overridden methods, the return type is Product.
+	
+	In Main class,
+	Creator creatorA = new CreatorA();
+	Product productA = creatorA.factoryMethod();
+	
+	This approach allows object creation without specifying exact class promoting flexiblity? and maintainablity?
+	
+Drawbacks:
+	1) As the system grows, the hierarchy of creators and products can become complex.
+	2) Violation of Single responsiblity rule: Keep the creator classes focused on creating objects and not burdening them with unrelated responsiblities
+	3) deciding which creator to use: It might not always be obvious which creator to use in the application.Striking the right balance between flexiblity and simplicity is key
+	4) Conformance to interfaces: Ensure that concrete products conform to the defined interfaces.
+	
+	
+	
