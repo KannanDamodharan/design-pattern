@@ -3,7 +3,6 @@ public abstract class EnemyShipBuilding {
 
     public EnemyShip orderTheShip(String typeOfShip){
         EnemyShip theEnemyShip = makeEnemyShip(typeOfShip);
-
         theEnemyShip.makeShip();
         theEnemyShip.displayEnemyShip();
         theEnemyShip.followHeroShip();

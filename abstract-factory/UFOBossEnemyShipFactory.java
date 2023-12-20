@@ -9,8 +9,7 @@ public class UFOBossEnemyShipFactory implements EnemyShipFactory {
         return new ESUFOBossEngine();
     }
 
-    /*@Override
-    public ESMissile addESEngine() {
+    public ESMissile addESMissile() {
         return new ESUFOBossMissile();
-    }*/
+    }
 }

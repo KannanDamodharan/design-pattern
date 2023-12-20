@@ -12,6 +12,7 @@ public class UFOEnemyShipBuilding extends EnemyShipBuilding{
             EnemyShipFactory shipPartsFactory = new UFOBossEnemyShipFactory();
             theEnemyShip = new UFOBossEnemyShip(shipPartsFactory);
             theEnemyShip.setName("UFO Boss Ship");
+            theEnemyShip.setMissile(theEnemyShip.getMissile());
         }
         return theEnemyShip;
     }

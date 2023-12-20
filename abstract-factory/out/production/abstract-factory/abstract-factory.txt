@@ -10,3 +10,13 @@ drawbacks:
 	3) Inflexiblity: The pattern can be less flexible if you need to add new products or families frequently.
 	4) Design Complexity: The pattern may lead to complex designs if not applied carefully.
 	
+	EnemyShipBuilding -> UFOEnemyShipBuilding -> UFOEnemyShipFactory -> EnemyShipFactory interface ->addESGun(): ESWeapon, addESEngine(): ESEngine 
+																		
+																		UFOEnemyShipFactory     -> addESGun(): ESWeapon, addESEngine(): ESEngine
+																		UFOBossEnemyShipFactory -> addESGun(): ESWeapon, addESEngine(): ESEngine
+																		
+																		ESWeapon interface -> (ESUFOGun)toString(): String
+																		ESEngine interface -> (ESUFOEngine)toString(): String
+																		
+																		ESWeapon interface -> (ESUFOBossGun)toString(): String
+																		ESEngine interface -> (ESUFOBossEngine)toString(): String

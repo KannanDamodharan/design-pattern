@@ -30,4 +30,5 @@ Drawbacks:
 	4) Conformance to interfaces: Ensure that concrete products conform to the defined interfaces.
 	
 	
-	
+Example: 
+	we know that we have to create a vehicle object but we don't know if it flies or it works on ground.
